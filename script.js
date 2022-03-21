@@ -5,7 +5,7 @@ function initSlideShow(slideshow) {
 
     var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
 
-    var index = 0, time = 2000;
+    var index = 0, time = 500;
     slides[index].classList.add('active');
 
     setInterval(() => {
