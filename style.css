@@ -1,90 +1,16 @@
 @font-face {
-    font-family: "Karrik-Italic";
-    src: url(/fonts/Karrik-Italic.ttf) format("truetype");
+    font-family: "FT88-Regular";
+    src: url(/fonts/FT88-Regular.ttf) format("truetype");
     font-style: normal;
     font-weight: normal;
   }
-
-@font-face {
-    font-family: "Karrik-Regular";
-    src: url(/fonts/Karrik-Regular.ttf) format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-
-/* GLOBAL */
 
 body {
-    font-family: Karrik-Regular;
+    font-family: FT88-Regular;
     letter-spacing: -1px;
-}
-
-p {
-    margin-top: 0;
-    color: #CACACA; 
-}
-
-button {
-    cursor: pointer;
-    background-color: transparent;
-    text-decoration: none;
-    color: #CACACA;
-    font-family: Karrik-Regular;
-    text-align: center;
-    border: none;
-    padding: 2px;
-}
-
-a {
-    cursor: pointer;
-    background-color: transparent;
-    text-decoration: none;
-    font-family: Karrik-Regular;
-    color: #CACACA;
-    display: block;
-}
-
-img {
-    width: 94%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* GRID+FOOTER+HEADER */
-
-.grid-center {
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.grid {
-    z-index: 0;
-    margin: 20px 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 70px 0;
-}
-
-.double-col {
-    grid-column: span 2;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-grid {
-    display: grid;
-}
-
-.center-placestovisit {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: #0E0E0E;
+    font-size: 16px;
 }
 
 .footer {
@@ -93,114 +19,101 @@ img {
     bottom: 0;
     left: 0;
     padding: 20px;
-    text-align: center;
+    color: #3E3E3E;
+    background: rgb(14,14,14);
+    background: linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 56%, rgba(255,255,255,0) 100%);
 }
 
-/* BUTTON STATE */
-
-.active-btn {
-    font-weight: 800;
-    background-color: transparent;
-    text-decoration: none;
-    color: #000000;
+.flex-h {
+    display: flex;
+    justify-content: space-between;
 }
 
-.active-btn-2 {
-    font-weight: 800;
-    background-color: transparent;
-    text-decoration: none;
-    color: #000000;
+.flex-v {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
 }
 
-/* FOREWORD SECTION */
-
-.foreword {
-    grid-column: 3/6;
-    color: #CACACA;
-    letter-spacing: 0px;
-    font-size: 20px;
-    padding-right: 20px;
+.w1200 {
+    width: 1200px;
 }
 
-/* EXPLORE SECTION */
-
-.explore {
-    font-size: 18px;
-    letter-spacing: 0px;
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card {
-    margin-top: 0;
-    color: #000000;
+.header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #3E3E3E;
+    background: rgb(14,14,14);
+    background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 56%, rgba(255,255,255,0) 100%);
 }
 
-.bottom-numbering {
-    align-self: end;
+.mr20 {
+    margin-right: 20px;
 }
 
-.mb20 {
-    margin-bottom: 20px;
-}
-
-.mb40 {
-    margin-bottom: 40px;
-}
-
-.foundationlink {
-    cursor: pointer;
-    background-color: transparent;
-    text-decoration: none;
-    font-family: Karrik-Regular;
-    letter-spacing: -1px;
-    padding: 5px;
-    border: 1px solid #000000;
-    color: #000000;
-    text-align: center;
-}
-
-/* CONTACTS SECTION */
-
-.col3 {
-    grid-column: 3/4; 
-}
-
-.col4 {
-    grid-column: 4/6;
-}
-
-.mb0 {
-    margin-bottom: 0px;
+.mr5 {
+    margin-right: 5px;
 }
 
 .mt20 {
     margin-top: 20px;
 }
 
-
-
-/* SLIDESHOW */
-
-[data-component="slideshow"] .slide {
-	display: none;
-  text-align: center;
-  width: 500px;
-  z-index: 10;
+.mb0 {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
-[data-component="slideshow"] .slide.active {
-	display: block;
+button {
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    color: #3E3E3E;
+    font-family: FT88-Regular;
+    text-align: center;
+    border: none;
+    padding: 2px;
+    font-size: 16px;
+    letter-spacing: -1px;
 }
 
-/* JS */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.grey {
+    color: #3E3E3E;
+}
+
+/* BUTTON STATE */
+
+.active-btn {
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.active-btn-2 {
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .display-false {
     display: none;
 }
 
 .display-false-2 {
-    display: none;
-}
-
-.display-false-3 {
     display: none;
 }

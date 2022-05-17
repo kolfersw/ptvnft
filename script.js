@@ -1,27 +1,6 @@
-var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-slideshows.forEach(initSlideShow);
-
-function initSlideShow(slideshow) {
-
-    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-
-    var index = 0, time = 500;
-    slides[index].classList.add('active');
-
-    setInterval(() => {
-        slides[index].classList.remove('active');
-
-        index++;
-        if (index === slides.length) index = 0;
-
-        slides[index].classList.add('active');
-
-    }, time);
-}
-
 let buttons = document.querySelectorAll(".btn1");
-let elements = document.querySelectorAll(".section");
-let elements2 = document.querySelectorAll(".section2");
+let elements = document.querySelectorAll(".s");
+let elements2 = document.querySelectorAll(".s2");
 let buttons2 = document.querySelectorAll(".btn2");
 let link = document.querySelectorAll(".links")
 
@@ -39,16 +18,6 @@ if (buttons != 0) {
             if (type == "intro") {
                 elements.forEach(function (item) {
                     if (item.classList.contains("intro")) {
-                        item.classList.remove("display-false");
-                    } else {
-                        item.classList.add("display-false");
-                    }
-                });
-            }
-
-            if (type == "foreword") {
-                elements.forEach(function (item) {
-                    if (item.classList.contains("foreword")) {
                         item.classList.remove("display-false");
                     } else {
                         item.classList.add("display-false");
