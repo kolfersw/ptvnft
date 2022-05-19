@@ -44,6 +44,23 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    height: 540px;
+    width: 500px;
+    overflow: auto;
+}
+
+.video-size {
+    background: #0E0E0E url(video/ptv-gf.gif) no-repeat center center;
+    /* process of creation */
+    width: 500px;
+    height: 500px;
+}
+
+.center-contacts {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header {
@@ -116,4 +133,15 @@ a {
 
 .display-false-2 {
     display: none;
+}
+
+/* LOADER */
+
+.loader-bgc {
+    z-index: 1;
+    background: #0E0E0E url(video/ptv-gf.gif) no-repeat center center;
+    background-size: 20%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }

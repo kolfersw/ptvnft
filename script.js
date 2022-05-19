@@ -130,3 +130,8 @@ if (buttons2 != 0) {
         });
     });
 };
+
+let preloader = document.querySelector(".loader-bgc");
+window.addEventListener("load", function() {
+    preloader.style.display = "none";
+})
