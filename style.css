@@ -49,9 +49,11 @@ body {
     overflow: auto;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+
 .video-size {
-    background: #0E0E0E url(video/ptv-gf.gif) no-repeat center center;
-    /* process of creation */
     width: 500px;
     height: 500px;
 }
